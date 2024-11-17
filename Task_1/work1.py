@@ -33,13 +33,12 @@ def ParseData(xml_data):
         values.append(float(value))
     return dates, values
 
-
 xmlData = GetData(value_, dateStart_, dateEnd_)  
 dates, values = ParseData(xmlData)
 
 plt.figure(figsize=(12, 6))
 plt.plot(dates, values, marker='o', linestyle='-', color='b')
-plt.title('Jan 2024')  
+plt.title('Jan 2024 - Oct 2024')  
 plt.xlabel('Date')
 plt.ylabel('USD to RUB')
 plt.grid(True)
